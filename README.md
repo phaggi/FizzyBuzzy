@@ -1,2 +1,2 @@
 # FizzyBuzzy
-# universal fizzbuzz without "if"
+## universal fizzbuzz without "if"
