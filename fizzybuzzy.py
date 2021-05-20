@@ -1,8 +1,21 @@
-def fb(i, number_, fb_dict_):
+def fb(i: int, number_: int, fb_dict_: list) -> str:
+    """
+
+    :param i:
+    :param number_:
+    :param fb_dict_:
+    :return:
+    """
     return str(fb_dict_[i % number_][number_])
 
 
-def fb_calc(size, _numbers, _fb_dict):
+def fb_calc(size: int, _numbers: tuple, _fb_dict: list):
+    """
+
+    :param size:
+    :param _numbers:
+    :param _fb_dict:
+    """
     a, b = _numbers
     for i in range(size):
         print(''.join({fb(i, a, _fb_dict), fb(i, b, _fb_dict)}) or i)
