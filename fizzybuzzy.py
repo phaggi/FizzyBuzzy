@@ -5,8 +5,7 @@ def fb(i, number, fbdict):
 def fbcalc(size, numbers, fbdict):
     a, b = numbers
     for i in range(size):
-        print(''.join(set([fb(i, a, fbdict)
-                              , fb(i, b, fbdict)])) or i)
+        print(''.join({fb(i, a, fbdict), fb(i, b, fbdict)}) or i)
 
 
 if __name__ == '__main__':
